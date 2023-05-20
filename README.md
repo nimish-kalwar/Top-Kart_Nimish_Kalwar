@@ -56,7 +56,7 @@ API bundles for top kart in django
         
   API's used by customer  
   1. to fetch deals  
-      GET- /create-deal/  
+      GET- /fetch-deals/   
   
   2. to create order  
       POST- /create-order/  
