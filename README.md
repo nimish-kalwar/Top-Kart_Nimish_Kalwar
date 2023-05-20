@@ -35,6 +35,46 @@ API bundles for top kart in django
 
   Considerations:  
   Users should not be able to place an order for a deal that is expired  
+  
+  API's used by seller  
+  1. to create deal  
+      POST-/create-deal/    
+      payload example:  
+      {  
+        "product_name":"test",  
+        "actual_price":"10",  
+       "discounted_price":"5",  
+       "units":3  
+        }  
+   
+  2. to update order  
+     POST- /update-order/  
+      payload example:  
+      {  
+        "product_name":"test"  
+        }  
+        
+  API's used by customer  
+  1. to fetch deals  
+      GET- /create-deal/  
+  
+  2. to create order  
+      POST- /create-order/  
+      payload example:  
+      {  
+       "product_name":"test",  
+        "price":"10",  
+       "buyer_name":"abc",  
+       "quantity":2  
+        }  
+  
+  3. to track status
+      POST- /track-status/  
+      payload example:  
+      {  
+       "product_name":"test"   
+        }  
+   
 
 
 ## Methods and Tools
