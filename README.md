@@ -75,7 +75,7 @@ API bundles for top kart in django
        "product_name":"test"   
         }  
         
- * To expire deal after 12 hours automatically, project is using jobs(apscheduler) which will run every minute to check if there is any deal which needs to expire
+ * To expire deal after 12 hours automatically, project is using jobs(apscheduler) which will run every 10 seconds to check if there is any deal which needs to expire
 
 
 ## Methods and Tools
